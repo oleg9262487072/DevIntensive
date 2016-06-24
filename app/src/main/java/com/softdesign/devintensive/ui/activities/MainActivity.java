@@ -8,7 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/*  ЭТА СТРОКА ОБРУГАНА СРЕДОЙ */
 import com.softdesign.devintensive.R;
+
+
+
 import com.softdesign.devintensive.utils.ConstantManager;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
