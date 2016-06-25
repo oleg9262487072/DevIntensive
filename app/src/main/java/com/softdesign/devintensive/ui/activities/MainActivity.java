@@ -10,19 +10,18 @@ import android.widget.EditText;
 
 /*  ЭТА СТРОКА ОБРУГАНА СРЕДОЙ */
 import com.softdesign.devintensive.R;
-
-
-
 import com.softdesign.devintensive.utils.ConstantManager;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
 
+
+    /*   это мы почистим   :)
     protected EditText mEditText;
     protected Button mRedButton, mGreenButton;
-    protected String mColorMode;
-
+    protected int mColorMode;
+    */
 
 
     /*
@@ -40,18 +39,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate");
 
+        /*  это мы почистим    :)
         mRedButton = (Button) findViewById(R.id.red_btn);
         mGreenButton = (Button) findViewById(R.id.green_btn);
         mEditText = (EditText) findViewById(R.id.textView);
 
         mRedButton.setOnClickListener(this);
         mGreenButton.setOnClickListener(this);
-
+        */
 
         if (savedInstanceState == null){
             // активити запускается первый раз
         }else{
             // активити запускается повторно
+
+            /*  это мы почистим   :)
+            mColorMode =  savedInstanceState.getInt(ConstantManager.COLOR_MODE_KEY);
+
+            if (mColorMode == Color.RED){
+                mEditText.setBackgroundColor(Color.RED);
+
+            } else if (mColorMode == Color.GREEN) {
+                mEditText.setBackgroundColor(Color.GREEN);
+            }
+            */
         }
     }
 
@@ -126,15 +137,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick (View v) {
         switch (v.getId()){
+            /* это мы почистим :)
             case R.id.green_btn:
                 mEditText.setBackgroundColor(Color.GREEN);
+                mColorMode = Color.GREEN;
                 break;
             case R.id.red_btn:
                 mEditText.setBackgroundColor(Color.RED);
+                mColorMode = Color.RED;
                 break;
-
+            */
         }
-
     }
 
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        /* это мы почистим  :)
+        Log.d(TAG, "onSaveInstanceState");
+        outState.putInt(ConstantManager.COLOR_MODE_KEY, mColorMode);
+        */
+    }
 }
