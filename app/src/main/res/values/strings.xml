@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Афанасьев Олег</string>
+    <string name="info.title.rating_textview">Рейтинг</string>
+    <string name="info.title.code_strings_textview">Написано строк кода</string>
+    <string name="info.title.projects_textview">Проектов</string>
+
+    <string name="info.title.mobile_textview">Мобильный</string>
+    <string name="info.title.email_textview">E-mail</string>
+    <string name="info.title.vk_textview">Профиль в VK</string>
+    <string name="info.title.github_textview">Репозиторий</string>
+    <string name="info.title.about_textview">О себе</string>
+
+    <string name="info.title.quantity">5</string>
+    <string name="info.title.team">Команда</string>
+    <string name="info.title.user_profile">Мой профиль</string>
+    <string name="info.title.appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 </resources>
